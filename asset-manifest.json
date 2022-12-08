@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/udzel-test/static/css/main.63e65faf.css",
+    "main.js": "/udzel-test/static/js/main.b2e0a252.js",
+    "index.html": "/udzel-test/index.html",
+    "main.63e65faf.css.map": "/udzel-test/static/css/main.63e65faf.css.map",
+    "main.b2e0a252.js.map": "/udzel-test/static/js/main.b2e0a252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63e65faf.css",
+    "static/js/main.b2e0a252.js"
+  ]
+}
