@@ -15,7 +15,7 @@ code {
 :root {
   --footerBgColor: #565656;
 }
-.page {
+#root {
   overflow: hidden;
   display: flex;
   flex-direction: column;

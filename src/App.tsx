@@ -11,7 +11,6 @@ import Project from "./pages/project/project";
 const App = () => {
   return (
     <Router>
-      <div className="page">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,7 +20,6 @@ const App = () => {
           <Route path="/person" element={<Person />} />
         </Routes>
         <Footer/>
-      </div>
     </Router>
   );
 };
