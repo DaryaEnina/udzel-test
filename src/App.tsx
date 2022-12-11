@@ -1,4 +1,5 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/header";
 
 import Buy from "./pages/buy/buy";
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/project" element={<Project />} />
         <Route path="/person" element={<Person />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 };

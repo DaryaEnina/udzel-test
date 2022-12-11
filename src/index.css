@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --footerBgColor: #565656;
+}
+
+@media (1280px <= width ) {
+  :root {
+    --mainWidth: 1170px;
+  }
+}
+
+@media (1024px <= width <= 1279px) {
+  :root {
+    --mainWidth: 970px;
+  }
+}
+
