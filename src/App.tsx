@@ -11,15 +11,17 @@ import Project from "./pages/project/project";
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/buy" element={<Buy />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/person" element={<Person />} />
-      </Routes>
-      <Footer/>
+      <div className="page">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/buy" element={<Buy />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/person" element={<Person />} />
+        </Routes>
+        <Footer/>
+      </div>
     </Router>
   );
 };

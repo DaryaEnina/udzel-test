@@ -15,6 +15,12 @@ code {
 :root {
   --footerBgColor: #565656;
 }
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 @media (1280px <= width ) {
   :root {

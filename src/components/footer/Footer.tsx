@@ -4,7 +4,7 @@ import footerLogo from '../../assets/footerIcon.png'
 
 const Footer = () => {
   return (
-    <div className='wrapper'>
+    <div className='footer'>
       <div className='content'>
         <img src={footerLogo} alt="udzel" width={36} height={39}/>
         <p id='agreement'>Пользовательское соглашение</p>
