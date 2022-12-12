@@ -1,4 +1,19 @@
-.nav {
+header {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  height: 96px;
+
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 488px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 323px;
+    font-weight: 500;
+    font-size: 18px;
+  }
 }
