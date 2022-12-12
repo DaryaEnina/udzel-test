@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 24px;
+  width: 269px;
+  height: 364px;
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  .card_title {
+    font-family: "Manrope-SemiBold";
+    font-size: 16px;
+    margin: 0 0 6px 0;
+  }
+  img {
+    width: 173px;
+    height: 106px;
+    margin: 0 0 6px 0;
+  }
+  .card_text {
+    font-family: "Manrope-Regular";
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+  .marg {
+    margin: 0;
+  }
+  .card_text-cash {
+    font-family: "Manrope-Medium";
+    font-size: 18px;
+    margin: 0;
+  }
+}
