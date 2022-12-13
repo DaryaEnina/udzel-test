@@ -15,10 +15,13 @@
     font-size: 16px;
     margin: 0 0 6px 0;
   }
-  img {
+  .card_image {
     width: 173px;
     height: 106px;
     margin: 0 0 12px 0;
+  }
+  .funds_image {
+    margin-bottom: 41px;
   }
   .card_text {
     font-family: "Manrope-Regular";
@@ -26,6 +29,14 @@
     margin: 0 0 18px 0;
     text-align: center;
     width: 227px;
+  }
+  .funds_text {
+    font-family: "Manrope-Regular";
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 36px;
   }
   .marg {
     margin: 0;
@@ -35,5 +46,15 @@
     font-size: 18px;
     margin: 0;
     margin-bottom: 41px;
+  }
+  .funds_link {
+    font-family: "Manrope-Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #464646;
+    margin-top: 13px;
   }
 }

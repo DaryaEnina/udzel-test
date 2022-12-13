@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "../../components/cards/shopCard";
+import ShopCard from "../../components/cards/shopCard";
 import { shops } from "../../data/shops";
 import { IShops } from "../../types/types";
 import "./style.scss";
@@ -21,7 +21,7 @@ const Buy = () => {
       </p>
       <div className="cards">
         {items.map((item) => (
-          <Card shops={{ ...item }} key={item.id} />
+          <ShopCard shops={{ ...item }} key={item.id} />
         ))}
       </div>
     </main>
