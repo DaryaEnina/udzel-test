@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { IShops } from "../../types/types";
+import Button from "../button/button";
 import Card from "./card";
 import "./style.scss";
 
@@ -16,6 +17,9 @@ const ShopCard: FC<ICard> = ({ shops }) => {
         <p className="card_text">{shops.description}</p>
         <p className="card_text marg">Вам вернется</p>
         <p className="card_text-cash">{shops.cashBack}</p>
+        <Button>
+          <p className="gradientText">К покупкам</p>
+        </Button>
       </div>
     </Card>
   );

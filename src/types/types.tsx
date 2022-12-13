@@ -5,3 +5,6 @@ export interface IShops {
   description: string;
   cashBack: string;
 }
+export type ElProps = {
+  children: JSX.Element;
+};

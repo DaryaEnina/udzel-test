@@ -1,0 +1,40 @@
+.outlinedBtn {
+  border-radius: 24px;
+  border: 1.5px solid transparent;
+  background: var(--mainGradient);
+  box-shadow: inset 0px 0px 0px 100vw #fff;
+  transition: all 0.3s;
+  width: 175px;
+  height: 44px;
+}
+.filledBtn {
+  padding: 11px 62px;
+  border-radius: 24px;
+  background: var(--mainGradient);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  transition: all 1s ease-out;
+}
+.filledBtn:hover {
+  background: var(--mainGradientReverse);
+}
+.outlinedBtn:hover {
+  background: var(--mainGradientReverse);
+}
+.gradientText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: var(--mainGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.outlinedBtn:hover > .gradientText {
+  background: var(--mainGradientReverse);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
