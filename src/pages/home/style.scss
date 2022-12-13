@@ -1,0 +1,109 @@
+.home_page-wrapper {
+  max-width: var(--mainWidth);
+  width: 100%;
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 32px;
+  }
+}
+
+.hero_section {
+  display: flex;
+  justify-content: space-between;
+  
+  .hero_section-content {
+    width: 508px;
+    margin-top: 73px;
+
+    p {
+      font-family: 'Manrope-Regular';
+      font-size: 24px;
+      line-height: 140%;
+    }
+    
+    button {
+      margin-top: 64px;
+    }
+  }
+}
+
+.description_section {
+  margin-top: 86px;
+
+  
+  .description-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .description-item {
+      width: 294px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      
+      img {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.stores_section, .funds_section {
+  margin-top: 160px;
+  margin-bottom: 160px;
+
+  .cards {
+    margin-top: 32px;
+    display: flex;
+    column-gap: 33px;
+
+    .card {
+      width: 269px;
+      height: 364px;
+      background: #ffffff;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+    }
+    .empty {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Manrope-Medium';
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}
+
+.about_section {
+  margin-bottom: 84px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+
+  .about-description {
+    position: relative;
+    width: 569px;
+  }
+  .portraits {
+    margin-top: 50px;
+  }
+  .gradientText {
+    font-size: 16px;
+    line-height: 24px;
+    background: var(--mainGradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .margin-top {
+    margin-top: 24px;
+  }
+  .heart-pic {
+    position: absolute;
+    top: 282px;
+    left: 415px;
+  }
+}
