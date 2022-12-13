@@ -1,9 +1,8 @@
-
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 @font-face {
   font-family: "Manrope-Regular";
   font-style: normal;
@@ -29,33 +28,72 @@
   src: url("./assets/fonts/Manrope-Bold.ttf") format("truetype");
 }
 
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-html,body{
-	font-size: 100%;
-	line-height: 1;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-  font-family: 'Manrope';
+:focus,
+:active {
+  outline: none;
 }
-input,button,textarea{font-family:inherit;}
+a:focus,
+a:active {
+  outline: none;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a {color: black;}
-a, a:visited, a:hover, a:active{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+html,
+body {
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Manrope";
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a {
+  color: black;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -68,8 +106,8 @@ h2 {
 
 :root {
   --footerBgColor: #565656;
-  --mainGradient: linear-gradient(90deg, #FF4F8D 0%, #F98712 100%);
-  --mainGradientReverse: linear-gradient(-90deg, #FF4F8D 0%, #F98712 100%);
+  --mainGradient: linear-gradient(90deg, #ff4f8d 0%, #f98712 100%);
+  --mainGradientReverse: linear-gradient(-90deg, #ff4f8d 0%, #f98712 100%);
 }
 #root {
   overflow: hidden;
@@ -99,7 +137,7 @@ h2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: all 1s ease-out;
 }
 .filledBtn:hover {
@@ -117,7 +155,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.outlinedBtn:hover > .gradientText{
+.outlinedBtn:hover > .gradientText {
   background: var(--mainGradientReverse);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
