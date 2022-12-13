@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/Logo.png";
+import Button from "../button/button";
 import "./style.scss";
-import logo from '../../assets/Logo.png'
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="headerNav">
-          <Link to='/'>
-            <img src={logo} alt="logo"/>
+          <Link to="/">
+            <img src={logo} alt="logo" />
           </Link>
           <nav>
             <ul className="nav">
@@ -25,9 +26,9 @@ const Header = () => {
           </nav>
         </div>
 
-          <button type="button" className="outlinedBtn">
-            <p className="gradientText">Войти</p>
-          </button>
+        <Button>
+          <p className="gradientText">Войти</p>
+        </Button>
       </div>
     </header>
   );
