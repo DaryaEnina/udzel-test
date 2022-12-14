@@ -1,0 +1,32 @@
+.project_page-wrapper {
+  max-width: var(--mainWidth);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 46px;
+  .project_page-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+    .project_page-section-text {
+      width: 507.06px;
+      margin-top: 28px;
+      .project_page-section-text-text {
+        font-family: "Manrope-Regular";
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 64px;
+      }
+      .project_page-btn {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 27px;
+  }
+  .project_page-images {
+    display: flex;
+    justify-content: space-around;
+  }
+}
