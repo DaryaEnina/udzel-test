@@ -25,9 +25,24 @@ const Project = () => {
       </div>
       <h2>Как работает благотворительный кешбэк?</h2>
       <div className="project_page-images">
-        <img src={bag} alt="bag" />
-        <img src={coin} alt="coin" />
-        <img src={hands} alt="hands" />
+        <div className="project_page-images-card">
+          <img src={bag} alt="bag" />
+          <p>
+            Переходите на сайты магазинов, кафе и других партнёров через наш
+            каталог
+          </p>
+        </div>
+        <div className="project_page-images-card">
+          <img src={coin} alt="coin" />
+          <p>Делайте привычные покупки и заказы и получайте кешбэк-баллы</p>
+        </div>
+        <div className="project_page-images-card">
+          <img src={hands} alt="hands" />
+          <p>
+            Распределяйте баллы кешбэка между выбранными фондами и организациями
+            каждый месяц
+          </p>
+        </div>
       </div>
     </main>
   );
