@@ -92,7 +92,6 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 400;
 }
 
 code {
@@ -132,5 +131,12 @@ h2 {
 @media (1024px <= width <= 1279px) {
   :root {
     --mainWidth: 970px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-family: "Manrope-SemiBold";
+    font-size: 24px;
+    line-height: 140%;
   }
 }
