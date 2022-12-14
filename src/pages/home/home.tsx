@@ -1,4 +1,5 @@
 import { FC, useState, useEffect } from "react";
+
 import "./style.scss";
 import heroImg from "../../assets/images/heroImg.png";
 import bagImg from "../../assets/images/bag.png";
@@ -12,10 +13,12 @@ import { IShops } from "../../types/types";
 import FundsCard from "../../components/cards/fundsCard";
 import { funds } from "../../data/funds";
 import { IFunds } from "../../types/types";
+import Popup from "../../components/popup/popup";
 
 const Home: FC = () => {
   const [items, setItems] = useState<IShops[]>([]);
   const [fundsItems, setFundsItems] = useState<IFunds[]>([]);
+  const [activeRegistration, setActiveRegistration] = useState(false);
 
   const firstShops = shops.slice(0, 3);
   const firstFunds = funds.slice(0, 3);
@@ -33,7 +36,11 @@ const Home: FC = () => {
             Тому, кто помогает другим, тоже нужна забота. Разрешите нам
             позаботиться о вас, чтобы помогать было проще и удобнее.{" "}
           </p>
-          <button type="button" className="filledBtn">
+          <button
+            type="button"
+            className="filledBtn"
+            onClick={() => setActiveRegistration(true)}
+          >
             Зарегистрироваться
           </button>
         </div>
@@ -95,17 +102,28 @@ const Home: FC = () => {
               радуйте себя и близких приятными подарками. А мы позаботимся о
               том, чтобы кешбэк от покупок возвращался в баллах. И вы сами
               разделите их среди тех, кому помогаете. Как дольки одной
-              мандаринки.  
+              мандаринки.
             </p>
-            <p>Вы всегда можете увидеть результаты своей помощи в
-              личном кабинете, где бы вы ни были. А мы будем рядом. Если у вас
-              появятся вопросы во время использования платформы, <span className="gradientText">НАПИШИТЕ НАМ.</span></p>
-            <p className="margin-top">Мы гордимся вами и будем всегда говорить об этом.</p>
+            <p>
+              Вы всегда можете увидеть результаты своей помощи в личном
+              кабинете, где бы вы ни были. А мы будем рядом. Если у вас появятся
+              вопросы во время использования платформы,{" "}
+              <span className="gradientText">НАПИШИТЕ НАМ.</span>
+            </p>
+            <p className="margin-top">
+              Мы гордимся вами и будем всегда говорить об этом.
+            </p>
             <img className="heart-pic" src={heart} alt="heart" />
           </div>
         </div>
         <img className="portraits" src={portraits} alt="portraits" />
       </section>
+      <Popup
+        active={activeRegistration}
+        handleBtnClick={() => setActiveRegistration(false)}
+      >
+        <p>это попап регистрации</p>
+      </Popup>
     </main>
   );
 };

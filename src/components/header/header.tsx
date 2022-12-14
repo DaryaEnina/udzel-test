@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.png";
 import Button from "../button/button";
+import Popup from "../popup/popup";
 import "./style.scss";
 
 const Header = () => {
+  const [activeLogin, setActiveLogin] = useState(false)
+
+
   return (
     <header>
       <div className="container">
@@ -26,10 +31,13 @@ const Header = () => {
           </nav>
         </div>
 
-        <Button>
+        <Button onClick={() => setActiveLogin(true)}>
           <p className="gradientText">Войти</p>
         </Button>
       </div>
+      <Popup active={activeLogin} handleBtnClick={() => setActiveLogin(false)}>
+        <p>это попап входа</p>
+      </Popup>
     </header>
   );
 };

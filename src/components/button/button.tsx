@@ -1,9 +1,9 @@
 import { ElProps } from "../../types/types";
 import "./style.scss";
 
-const Button = ({ children }: ElProps) => {
+const Button = ({ children, onClick }: ElProps) => {
   return (
-    <button type="button" className="outlinedBtn">
+    <button type="button" className="outlinedBtn" onClick={onClick}>
       {children}
     </button>
   );

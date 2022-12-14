@@ -7,6 +7,7 @@ export interface IShops {
 }
 export type ElProps = {
   children: JSX.Element;
+  onClick?: () => void;
 };
 
 export interface IFunds {
