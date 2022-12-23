@@ -107,6 +107,9 @@ h2 {
   --footerBgColor: #565656;
   --mainGradient: linear-gradient(90deg, #ff4f8d 0%, #f98712 100%);
   --mainGradientReverse: linear-gradient(-90deg, #ff4f8d 0%, #f98712 100%);
+  --orange: #F57423;
+  --green: #288C44;
+  --red: #EB3C42;
 }
 #root {
   overflow: hidden;
@@ -114,13 +117,34 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
 }
-
+/* .gradientText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: var(--mainGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: var(--mainWidth);
 }
+/* .filledBtn {
+  font-family: 'Manrope-Medium';
+  padding: 13px 65px;
+  border-radius: 24px;
+  background: var(--mainGradient);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.filledBtn:hover {
+  background: var(--mainGradientReverse);
+} */
 
 @media (1280px <= width) {
   :root {
