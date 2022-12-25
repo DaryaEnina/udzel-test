@@ -5,7 +5,6 @@
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: rgb(30, 30, 30, 0.8);
   opacity: 0;
@@ -19,8 +18,10 @@
 .modal__content {
   display: flex;
   flex-direction: column;
-  width: 399px;
+  margin-right: 14px;
+  width: 402px;
   height: 620px;
+  margin-top: 127px;
   transform: scale(0.5);
   transition: 0.5s all;
 }
@@ -28,12 +29,38 @@
   transform: scale(1);
 }
 .modal__content-field {
-  padding: 42px 56px;
+  position: relative;
+  padding: 52px 56px 56px;
   background: #FFFFFF;
   border-radius: 8px;
 }
 .modal__closeBtn {
-  align-self: flex-end;
-  margin-bottom: 6px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 16px;
   background: transparent;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: #FFF2E8;
+
+  svg path {
+    fill: url(#MyGradient);
+  }
+  }
+
+  &:active {
+    background: transparent;
+  }
 }
+
+
+
+
+
