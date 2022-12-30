@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/udzel-test/index.html/static/css/main.5c87dc91.css",
-    "main.js": "/udzel-test/index.html/static/js/main.1abedd69.js",
-    "static/media/Manrope-SemiBold.ttf": "/udzel-test/index.html/static/media/Manrope-SemiBold.0a3797b8dd78c25ef6b4.ttf",
-    "static/media/Manrope-Medium.ttf": "/udzel-test/index.html/static/media/Manrope-Medium.7e416a42443e06ed7d57.ttf",
-    "static/media/Manrope-Regular.ttf": "/udzel-test/index.html/static/media/Manrope-Regular.25323263b2aac026e777.ttf",
-    "static/media/Manrope-Bold.ttf": "/udzel-test/index.html/static/media/Manrope-Bold.15c3a2fdedaee1ebf773.ttf",
-    "static/media/heroImg.png": "/udzel-test/index.html/static/media/heroImg.ef751aaab91072bc45fc.png",
-    "static/media/Gilroy-Regular.eot": "/udzel-test/index.html/static/media/Gilroy-Regular.1d051d9d4215c09cbcaa.eot",
-    "static/media/Gilroy-Regular.ttf": "/udzel-test/index.html/static/media/Gilroy-Regular.b91b0127c56a8e5f9e83.ttf",
-    "static/media/portraits.png": "/udzel-test/index.html/static/media/portraits.f47b24d0b9baabc53567.png",
-    "static/media/girl.png": "/udzel-test/index.html/static/media/girl.a929a786a8ec505660fd.png",
-    "static/media/Gilroy-Regular.woff": "/udzel-test/index.html/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
-    "static/media/image4.png": "/udzel-test/index.html/static/media/image4.8c197b2ce06cf2411214.png",
-    "static/media/image1.png": "/udzel-test/index.html/static/media/image1.00cc63a5b93fb0969b9b.png",
-    "static/media/image2.png": "/udzel-test/index.html/static/media/image2.b228d9c3bf131fc7aa4e.png",
-    "static/media/image3.png": "/udzel-test/index.html/static/media/image3.36277bc5dcfd831dd0e5.png",
-    "index.html": "/udzel-test/index.html/index.html",
-    "main.5c87dc91.css.map": "/udzel-test/index.html/static/css/main.5c87dc91.css.map",
-    "main.1abedd69.js.map": "/udzel-test/index.html/static/js/main.1abedd69.js.map"
+    "main.css": "/udzel-test/static/css/main.a4773940.css",
+    "main.js": "/udzel-test/static/js/main.41ef3fe8.js",
+    "static/media/Manrope-SemiBold.ttf": "/udzel-test/static/media/Manrope-SemiBold.0a3797b8dd78c25ef6b4.ttf",
+    "static/media/Manrope-Medium.ttf": "/udzel-test/static/media/Manrope-Medium.7e416a42443e06ed7d57.ttf",
+    "static/media/Manrope-Regular.ttf": "/udzel-test/static/media/Manrope-Regular.25323263b2aac026e777.ttf",
+    "static/media/Manrope-Bold.ttf": "/udzel-test/static/media/Manrope-Bold.15c3a2fdedaee1ebf773.ttf",
+    "static/media/heroImg.png": "/udzel-test/static/media/heroImg.ef751aaab91072bc45fc.png",
+    "static/media/Gilroy-Regular.eot": "/udzel-test/static/media/Gilroy-Regular.1d051d9d4215c09cbcaa.eot",
+    "static/media/Gilroy-Regular.ttf": "/udzel-test/static/media/Gilroy-Regular.b91b0127c56a8e5f9e83.ttf",
+    "static/media/portraits.png": "/udzel-test/static/media/portraits.f47b24d0b9baabc53567.png",
+    "static/media/girl.png": "/udzel-test/static/media/girl.a929a786a8ec505660fd.png",
+    "static/media/Gilroy-Regular.woff": "/udzel-test/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
+    "static/media/image4.png": "/udzel-test/static/media/image4.8c197b2ce06cf2411214.png",
+    "static/media/image1.png": "/udzel-test/static/media/image1.00cc63a5b93fb0969b9b.png",
+    "static/media/image2.png": "/udzel-test/static/media/image2.b228d9c3bf131fc7aa4e.png",
+    "static/media/image3.png": "/udzel-test/static/media/image3.36277bc5dcfd831dd0e5.png",
+    "index.html": "/udzel-test/index.html",
+    "main.a4773940.css.map": "/udzel-test/static/css/main.a4773940.css.map",
+    "main.41ef3fe8.js.map": "/udzel-test/static/js/main.41ef3fe8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c87dc91.css",
-    "static/js/main.1abedd69.js"
+    "static/css/main.a4773940.css",
+    "static/js/main.41ef3fe8.js"
   ]
 }
