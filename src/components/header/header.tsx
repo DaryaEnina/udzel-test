@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.png";
+import { useStateContext } from "../../context/StateContext";
 import Button from "../button/button";
+import LoginForm from "../loginForm/loginForm";
 import Popup from "../popup/popup";
+import RegForm from "../registrationForm/regForm";
 import "./style.scss";
 
 const Header = () => {
-  const [activeLogin, setActiveLogin] = useState(false)
-
+  const {activeRegistration, setActiveRegistration, activeLogin, setActiveLogin} = useStateContext();
 
   return (
     <header>
@@ -36,7 +38,13 @@ const Header = () => {
         </Button>
       </div>
       <Popup active={activeLogin} handleBtnClick={() => setActiveLogin(false)}>
-        <p>это попап входа</p>
+        <LoginForm/>
+      </Popup>
+      <Popup
+        active={activeRegistration}
+        handleBtnClick={() => setActiveRegistration(false)}
+      >
+        <RegForm/>
       </Popup>
     </header>
   );
