@@ -13,13 +13,12 @@ import { IShops } from "../../types/types";
 import FundsCard from "../../components/cards/fundsCard";
 import { funds } from "../../data/funds";
 import { IFunds } from "../../types/types";
-import Popup from "../../components/popup/popup";
-import RegForm from "../../components/registrationForm/regForm";
+import { useStateContext } from "../../context/StateContext";
 
 const Home: FC = () => {
   const [items, setItems] = useState<IShops[]>([]);
   const [fundsItems, setFundsItems] = useState<IFunds[]>([]);
-  const [activeRegistration, setActiveRegistration] = useState(true);
+  const {activeRegistration, setActiveRegistration} = useStateContext();
 
   const firstShops = shops.slice(0, 3);
   const firstFunds = funds.slice(0, 3);
@@ -119,12 +118,6 @@ const Home: FC = () => {
         </div>
         <img className="portraits" src={portraits} alt="portraits" />
       </section>
-      <Popup
-        active={activeRegistration}
-        handleBtnClick={() => setActiveRegistration(false)}
-      >
-        <RegForm/>
-      </Popup>
     </main>
   );
 };

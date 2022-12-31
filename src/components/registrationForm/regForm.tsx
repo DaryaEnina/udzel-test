@@ -2,9 +2,11 @@ import { useState } from "react";
 import { FieldValues, useForm, Controller } from "react-hook-form";
 import "./form.scss";
 import "../button/style.scss";
+import { useStateContext } from "../../context/StateContext";
 
 const RegForm = () => {
   const [visibility, setVisibility] = useState(false);
+  const { setActiveRegistration, setActiveLogin } = useStateContext();
   const {
     register,
     handleSubmit,
@@ -25,6 +27,11 @@ const RegForm = () => {
     console.log(data);
   };
 
+  const handleClick = () => {
+    setActiveRegistration(false);
+    setActiveLogin(true);
+  };
+
   return (
     <div className="form__wrapper">
       <p className="form__title">Регистрация</p>
@@ -35,7 +42,8 @@ const RegForm = () => {
             type="email"
             {...register("email", {
               required: true,
-              pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+              pattern:
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
             })}
             placeholder="user_name@mail.by"
             id="email"
@@ -45,7 +53,9 @@ const RegForm = () => {
             <p className="errorMsg">Введите адрес электронной почты.</p>
           )}
           {errors.email?.type === "pattern" && (
-            <p className="errorMsg">Проверьте правильность введения электронной почты.</p>
+            <p className="errorMsg">
+              Проверьте правильность введения электронной почты.
+            </p>
           )}
         </div>
         <div className="form__control">
@@ -57,7 +67,7 @@ const RegForm = () => {
               validate: {
                 checkLength: (value) => value.length >= 2 && value.length <= 25,
                 matchPattern: (value) =>
-                /(^[a-zA-Zа-яА-Я0-9.,-]+)(\s?[a-zA-Zа-яА-Я0-9.,-]+)+$/.test(
+                  /(^[a-zA-Zа-яА-Я0-9.,-]+)(\s?[a-zA-Zа-яА-Я0-9.,-]+)+$/.test(
                     value
                   ),
               },
@@ -94,15 +104,15 @@ const RegForm = () => {
           )}
           {errors.password?.type === "checkLength" && (
             <p className="errorMsg">
-              Недостаточная длина пароля. Пароль должен содержать не менее 7 символов.
+              Недостаточная длина пароля. Пароль должен содержать не менее 7
+              символов.
             </p>
           )}
           {errors.password?.type === "matchPattern" && (
             <p className="errorMsg">
               Использование недопустимых знаков.
-              {/* Password should contain at least one uppercase letter, lowercase
-              letter, digit, and special symbol. */}
-              Пароль может содержать только латинские буквы, цифры, специальные символы
+              Пароль может содержать только латинские буквы, цифры, специальные
+              символы
             </p>
           )}
         </div>
@@ -117,10 +127,10 @@ const RegForm = () => {
             {...register("passwordConfirmation", {
               required: true,
               validate: {
-                  matchesPreviousPassword: (value) => {
-                    const { password } = getValues();
-                    return password === value || "Passwords should match!";
-                  }
+                matchesPreviousPassword: (value) => {
+                  const { password } = getValues();
+                  return password === value || "Passwords should match!";
+                },
               },
             })}
             placeholder="Пароль"
@@ -150,19 +160,6 @@ const RegForm = () => {
             );
           }}
         />
-        {/* <div className="form__agreement">
-          <input
-            type="checkbox"
-            {...(register("agreement"), { required: true })}
-            id="agreement"
-            className="custom-checkbox"
-            onChange={() => setChecked(!checked)}
-            checked={checked}
-            value={"true"}
-          />
-          <label htmlFor="agreement"></label>
-          <div>Я даю согласие на обработку персональных данных</div>
-        </div> */}
         <div className="form__control">
           <button type="submit" className="filledBtn">
             Зарегистрироваться
@@ -171,8 +168,8 @@ const RegForm = () => {
       </form>
       <div className="bottom-text">
         Уже есть аккаунт?
-        {/* <span>Войти</span> */}
-        <button>Войти</button>
+
+        <button onClick={handleClick}>Войти</button>
       </div>
     </div>
   );

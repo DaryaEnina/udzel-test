@@ -8,6 +8,7 @@
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 24px;
+    text-align: center;
   }
 
   .form__control {
@@ -31,18 +32,8 @@
       font-size: 16px;
       line-height: 24px;
       color: #868B8D;
-
-      // &:placeholder-shown {
-        
-      // }
-      // &:valid {
-      //   border: 1px solid var(--green);
-      // }
-      // &:invalid:not(:focus):not(:placeholder-shown) {
-      //   border: 1px solid var(--red);
-      // }
-      
     }
+
     .icon {
       position: absolute;
       right: 12px;
@@ -142,4 +133,18 @@
   input.wrong {
     border: 1px solid var(--red);
   }
+}
+.loginBtn {
+  width: 100%;
+}
+.restore {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 135%;
+  background: var(--mainGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

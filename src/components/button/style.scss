@@ -1,7 +1,7 @@
 .outlinedBtn {
   border-radius: 24px;
   border: 1.5px solid transparent;
-  background: var(--mainGradient);
+  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
   box-shadow: inset 0px 0px 0px 100vw #fff;
   transition: all 0.3s;
   width: 175px;
@@ -11,29 +11,30 @@
   font-family: 'Manrope-Medium';
   padding: 13px 65px;
   border-radius: 24px;
-  background: var(--mainGradient);
+  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  transition: --gradientColor1 0.5s, --gradientColor2 0.5s;
 }
-.filledBtn:hover {
-  background: var(--mainGradientReverse);
-}
+.filledBtn:hover,
 .outlinedBtn:hover {
-  background: var(--mainGradientReverse);
+  --gradientColor1: #f98712;
+  --gradientColor2: #ff4f8d;
 }
 .gradientText {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  background: var(--mainGradient);
+  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .outlinedBtn:hover > .gradientText {
-  background: var(--mainGradientReverse);
+  --gradientColor1: #f98712;
+  --gradientColor2: #ff4f8d;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -103,9 +103,22 @@ h2 {
   font-size: 36px;
 }
 
+@property --gradientColor1 {
+  syntax: '<color>';
+  initial-value: #ff4f8d;
+  inherits: false;
+}
+
+@property --gradientColor2 {
+  syntax: '<color>';
+  initial-value: #f98712;
+  inherits: false;
+}
+
 :root {
   --footerBgColor: #565656;
-  --mainGradient: linear-gradient(90deg, #ff4f8d 0%, #f98712 100%);
+  --mainGradient: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+  /* --mainGradient: linear-gradient(90deg, #ff4f8d 0%, #f98712 100%); */
   --mainGradientReverse: linear-gradient(-90deg, #ff4f8d 0%, #f98712 100%);
   --orange: #F57423;
   --green: #288C44;
