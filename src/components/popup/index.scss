@@ -10,6 +10,7 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.4s;
+  z-index: 1;
 }
 .active {
   opacity: 1;
@@ -31,7 +32,7 @@
 .modal__content-field {
   position: relative;
   padding: 52px 56px 56px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
 .modal__closeBtn {
@@ -48,19 +49,14 @@
   cursor: pointer;
 
   &:hover {
-    background: #FFF2E8;
+    background: #fff2e8;
 
-  svg path {
-    fill: url(#MyGradient);
-  }
+    svg path {
+      fill: url(#MyGradient);
+    }
   }
 
   &:active {
     background: transparent;
   }
 }
-
-
-
-
-

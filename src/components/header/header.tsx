@@ -9,7 +9,12 @@ import RegForm from "../registrationForm/regForm";
 import "./style.scss";
 
 const Header = () => {
-  const {activeRegistration, setActiveRegistration, activeLogin, setActiveLogin} = useStateContext();
+  const {
+    activeRegistration,
+    setActiveRegistration,
+    activeLogin,
+    setActiveLogin,
+  } = useStateContext();
 
   return (
     <header>
@@ -33,18 +38,22 @@ const Header = () => {
           </nav>
         </div>
 
-        <Button onClick={() => setActiveLogin(true)}>
+        <Button
+          onClick={() => setActiveLogin(true)}
+          className="secondary big"
+          width="181px"
+        >
           <p className="gradientText">Войти</p>
         </Button>
       </div>
       <Popup active={activeLogin} handleBtnClick={() => setActiveLogin(false)}>
-        <LoginForm/>
+        <LoginForm />
       </Popup>
       <Popup
         active={activeRegistration}
         handleBtnClick={() => setActiveRegistration(false)}
       >
-        <RegForm/>
+        <RegForm />
       </Popup>
     </header>
   );

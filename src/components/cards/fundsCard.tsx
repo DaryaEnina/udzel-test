@@ -13,15 +13,19 @@ const FundsCard: FC<ICardF> = ({ funds }) => {
   return (
     <Card>
       <div className="card_wrapper">
-        <p className="card_title">{funds.name}</p>
-        <img className="card_image funds_image" src={funds.icon} alt="" />
-        <p className="card_text funds_text">{funds.description}</p>
-        <Button>
-          <p className="gradientText">Перечислить баллы</p>
-        </Button>
-        <NavLink className={"funds_link"} to={"#"}>
-          Перейти на сайт
-        </NavLink>
+        <div className="card_info">
+          <p className="card_title">{funds.name}</p>
+          <img className="card_image funds_image" src={funds.icon} alt="" />
+          <p className="card_text funds_text">{funds.description}</p>
+        </div>
+        <div className="card_button-wrapper funds_button_wrapper">
+          <Button className="secondary big">
+            <p className="gradientText">Перечислить баллы</p>
+          </Button>
+          <Button className="textButton big">
+            <p className="gradientText">Перейти на сайт</p>
+          </Button>
+        </div>
       </div>
     </Card>
   );

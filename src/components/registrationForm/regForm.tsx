@@ -3,6 +3,7 @@ import { FieldValues, useForm, Controller } from "react-hook-form";
 import "./form.scss";
 import "../button/style.scss";
 import { useStateContext } from "../../context/StateContext";
+import Button from "../button/button";
 
 const RegForm = () => {
   const [visibility, setVisibility] = useState(false);
@@ -110,9 +111,8 @@ const RegForm = () => {
           )}
           {errors.password?.type === "matchPattern" && (
             <p className="errorMsg">
-              Использование недопустимых знаков.
-              Пароль может содержать только латинские буквы, цифры, специальные
-              символы
+              Использование недопустимых знаков. Пароль может содержать только
+              латинские буквы, цифры, специальные символы
             </p>
           )}
         </div>
@@ -160,15 +160,17 @@ const RegForm = () => {
             );
           }}
         />
-        <div className="form__control">
-          <button type="submit" className="filledBtn">
+        <div className="form__control form__button">
+          <Button className="primary big">
+            <p className="buttonText">Войти</p>
+          </Button>
+          {/* <button type="submit" className="filledBtn">
             Зарегистрироваться
-          </button>
+          </button> */}
         </div>
       </form>
       <div className="bottom-text">
         Уже есть аккаунт?
-
         <button onClick={handleClick}>Войти</button>
       </div>
     </div>

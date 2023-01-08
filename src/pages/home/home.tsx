@@ -14,11 +14,12 @@ import FundsCard from "../../components/cards/fundsCard";
 import { funds } from "../../data/funds";
 import { IFunds } from "../../types/types";
 import { useStateContext } from "../../context/StateContext";
+import Button from "../../components/button/button";
 
 const Home: FC = () => {
   const [items, setItems] = useState<IShops[]>([]);
   const [fundsItems, setFundsItems] = useState<IFunds[]>([]);
-  const {activeRegistration, setActiveRegistration} = useStateContext();
+  const { activeRegistration, setActiveRegistration } = useStateContext();
 
   const firstShops = shops.slice(0, 3);
   const firstFunds = funds.slice(0, 3);
@@ -36,13 +37,20 @@ const Home: FC = () => {
             Тому, кто помогает другим, тоже нужна забота. Разрешите нам
             позаботиться о вас, чтобы помогать было проще и удобнее.{" "}
           </p>
-          <button
+          <Button
+            className="primary big"
+            width="311px"
+            onClick={() => setActiveRegistration(true)}
+          >
+            <p className="buttonText">Зарегистрироваться</p>
+          </Button>
+          {/* <button
             type="button"
             className="filledBtn"
             onClick={() => setActiveRegistration(true)}
           >
             Зарегистрироваться
-          </button>
+          </button> */}
         </div>
         <img src={heroImg} alt="hero" />
       </section>

@@ -4,40 +4,61 @@
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+
   .card_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px 24px 24px 43px;
+    max-width: 268px;
+    width: 100%;
+    height: 360px;
+    padding: 24px 18px 24px 18px;
+    position: relative;
+    z-index: 0;
+    .card_info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card_title {
+        font-family: "Manrope-SemiBold";
+        font-size: 16px;
+        margin: 0 0 6px 0;
+      }
+      .card_image {
+        width: 173px;
+        height: 106px;
+        margin: 0 0 12px 0;
+      }
+      .funds_image {
+        margin-bottom: 41px;
+      }
+      .card_text {
+        font-family: "Manrope-Regular";
+        font-size: 14px;
+        margin: 0 0 18px 0;
+        text-align: center;
+        width: 227px;
+      }
+      .funds_text {
+        font-family: "Manrope-Regular";
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 36px;
+      }
+    }
+    .card_button-wrapper {
+      max-width: 232px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: 24px;
+    }
+    .funds_button_wrapper {
+      bottom: 0px;
+    }
   }
-  .card_title {
-    font-family: "Manrope-SemiBold";
-    font-size: 16px;
-    margin: 0 0 6px 0;
-  }
-  .card_image {
-    width: 173px;
-    height: 106px;
-    margin: 0 0 12px 0;
-  }
-  .funds_image {
-    margin-bottom: 41px;
-  }
-  .card_text {
-    font-family: "Manrope-Regular";
-    font-size: 14px;
-    margin: 0 0 18px 0;
-    text-align: center;
-    width: 227px;
-  }
-  .funds_text {
-    font-family: "Manrope-Regular";
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 36px;
-  }
+
   .marg {
     margin: 0;
   }

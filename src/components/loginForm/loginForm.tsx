@@ -5,6 +5,7 @@ import { FieldValues, useForm } from "react-hook-form";
 import { useStateContext } from "../../context/StateContext";
 import "../registrationForm/form.scss";
 import "../button/style.scss";
+import Button from "../button/button";
 
 const LoginForm = () => {
   const [visibility, setVisibility] = useState(false);
@@ -76,14 +77,20 @@ const LoginForm = () => {
           )}
         </div>
         <button className="restore">Восстановить пароль</button>
-        <div className="form__control">
-          <button type="submit" className="filledBtn loginBtn">
+        <div className="form__control form__button">
+          <Button className="primary big">
+            <p className="buttonText">Войти</p>
+          </Button>
+          {/* <button type="submit" className="filledBtn loginBtn">
             Войти
-          </button>
+          </button> */}
         </div>
       </form>
       <div className="bottom-text">
         Нет аккаунта?
+        {/* <Button className="secondary medium">
+          <p className="gradientText">Зарегистрировать</p>
+        </Button> */}
         <button onClick={handleClick}>Зарегистрировать</button>
       </div>
     </div>

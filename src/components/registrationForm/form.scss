@@ -4,7 +4,7 @@
   width: 290px;
 
   .form__title {
-    font-family: 'Manrope-SemiBold';
+    font-family: "Manrope-SemiBold";
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 24px;
@@ -15,10 +15,10 @@
     margin-top: 14px;
     position: relative;
     label {
-      font-family: 'Manrope-Medium';
+      font-family: "Manrope-Medium";
       font-size: 16px;
       line-height: 20px;
-      color: #1E1E1E;
+      color: #1e1e1e;
     }
 
     input {
@@ -26,12 +26,12 @@
       padding: 10px 12px;
       width: 290px;
       height: 44px;
-      border: 1px solid #AAAEB0;
+      border: 1px solid #aaaeb0;
       border-radius: 4px;
-      font-family: 'Manrope-Regular';
+      font-family: "Manrope-Regular";
       font-size: 16px;
       line-height: 24px;
-      color: #868B8D;
+      color: #868b8d;
     }
 
     .icon {
@@ -42,19 +42,19 @@
       height: 24px;
       background-size: 24px;
       cursor: pointer;
-      }
+    }
 
     .visible {
-      background: url('../../assets/icons/Eye_on.png') no-repeat right;
+      background: url("../../assets/icons/Eye_on.png") no-repeat right;
     }
     .hidden {
-      background: url('../../assets/icons/Eye_off.png') no-repeat right;
+      background: url("../../assets/icons/Eye_off.png") no-repeat right;
     }
     .password-helper {
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      color: #868B8D;
+      color: #868b8d;
       margin-top: 4px;
       margin-bottom: 16px;
     }
@@ -65,36 +65,36 @@
     margin-top: 8px;
     font-size: 12px;
     line-height: 135%;
-    color: #3F3F3F;
+    color: #3f3f3f;
 
     .custom-checkbox {
       position: absolute;
       z-index: -1;
       opacity: 0;
     }
-    .custom-checkbox+label {
+    .custom-checkbox + label {
       display: inline-flex;
       align-items: center;
       user-select: none;
     }
-    .custom-checkbox+label::before {
-      content: '';
+    .custom-checkbox + label::before {
+      content: "";
       display: inline-block;
       margin: 8px 8px 8px 12px;
       width: 20px;
       height: 20px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 1px solid #AAAEB0;
+      border: 1px solid #aaaeb0;
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50%;
       cursor: pointer;
     }
-    .custom-checkbox:checked+label::before {
-      border-color: #F57423;
-      background-color: #F57423;
+    .custom-checkbox:checked + label::before {
+      border-color: #f57423;
+      background-color: #f57423;
       background-image: url("../../assets//icons/active-checkbox.png");
     }
     div {
@@ -112,7 +112,7 @@
 
     button {
       cursor: pointer;
-      font-family: 'Manrope-Medium';
+      font-family: "Manrope-Medium";
       font-weight: 500;
       font-size: 16px;
       line-height: 100%;
@@ -147,4 +147,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
 }

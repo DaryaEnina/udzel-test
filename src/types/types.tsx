@@ -12,6 +12,8 @@ export type ElProps = {
   children?: ReactNode;
   onClick?: () => void;
   className?: string;
+  width?: string;
+  font?: string;
 };
 
 export interface IFunds {
