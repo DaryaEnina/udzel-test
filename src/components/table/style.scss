@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border: none;
+
+  thead {
+    th {
+      font-family: "Manrope-Medium";
+      font-size: 16px;
+      line-height: 135%;
+      text-transform: uppercase;
+      text-align: start;
+      color: #070707;
+      border-bottom: 1px solid #ffffff;
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+  tbody {
+    td {
+      font-family: "Manrope-Regular";
+      font-size: 16px;
+      line-height: 24px;
+      text-align: start;
+      color: #070707;
+      border-bottom: 1px solid #ffffff;
+      padding: 7px 0px;
+      &:last-child {
+        text-align: end;
+      }
+    }
+  }
+}

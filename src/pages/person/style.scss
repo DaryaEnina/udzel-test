@@ -1,0 +1,86 @@
+.person_page-container {
+  display: flex;
+  .person_page-personal_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 300px;
+    margin-right: 100px;
+    .personal_info-greeting {
+      display: flex;
+      margin-bottom: 24px;
+      p {
+        font-family: "Manrope-Regular";
+        font-size: 24px;
+        line-height: 30.6px;
+        color: #070707;
+      }
+      h2 {
+        font-family: "Manrope-SemiBold";
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+    }
+    .personal_info-form {
+      .form__control {
+        margin-bottom: 32px;
+        label {
+          font-family: "Manrope-Medium";
+          font-size: 16px;
+          line-height: 135%;
+          color: #868b8d;
+        }
+        input {
+          margin-top: 4px;
+          padding: 10px 12px;
+          max-width: 300px;
+          width: 100%;
+          height: 44px;
+          background: #e3e8ec;
+          border: 1px solid #cbcfd2;
+          border-radius: 4px;
+          font-family: "Manrope-Regular";
+          font-size: 16px;
+          line-height: 150%;
+          color: #868b8d;
+        }
+      }
+    }
+    .personal_info-buttons {
+      align-self: center;
+      .personal_info-buttons-change {
+        font-family: "Manrope-Medium";
+        font-size: 18px;
+        line-height: 130%;
+        background: linear-gradient(90deg, #ff4f8d 0%, #f98712 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-top: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+  .person_page-balance_info {
+    max-width: 670px;
+    width: 100%;
+    .balance_text {
+      max-width: 670px;
+      background: linear-gradient(90deg, #ffebf3 0%, #ffeede 100%);
+      border-radius: 8px 8px 0px 0px;
+      font-family: "Manrope-SemiBold";
+      font-size: 24px;
+      line-height: 125%;
+      color: #070707;
+      padding: 7px 8px;
+      margin-bottom: 4px;
+    }
+    .balance_table {
+      padding: 14px 24px;
+      background: linear-gradient(90deg, #ffebf3 0%, #ffeede 100%);
+      border-radius: 0px 0px 8px 8px;
+    }
+  }
+}
