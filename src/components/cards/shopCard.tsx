@@ -21,7 +21,7 @@ const ShopCard: FC<ICard> = ({ shops }) => {
         <p className="card_text">{shops.description}</p>
         <p className="card_text marg">Вам вернется</p>
         <p className="card_text-cash">{shops.cashBack}</p>
-        <Button>
+        <Button className="textButton medium">
           <p className="gradientText">К покупкам</p>
         </Button>
       </div>

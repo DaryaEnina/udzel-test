@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IShops {
   id: string;
   name: string;
@@ -6,8 +8,10 @@ export interface IShops {
   cashBack: string;
 }
 export type ElProps = {
-  children: JSX.Element;
+  // children?: JSX.Element;
+  children?: ReactNode;
   onClick?: () => void;
+  className?: string;
 };
 
 export interface IFunds {

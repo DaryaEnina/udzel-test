@@ -1,41 +1,132 @@
-.outlinedBtn {
+.primary {
+  background: linear-gradient(
+    90deg,
+    var(--gradientColor1),
+    var(--gradientColor2)
+  );
+  transition: all 0.5s;
+  border-radius: 24px;
+  align-items: center;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      var(--gradientColor2),
+      var(--gradientColor1)
+    );
+  }
+  &:disabled {
+    background: #cbcfd2;
+  }
+}
+
+.secondary {
+  justify-content: center;
+  align-items: center;
   border-radius: 24px;
   border: 1.5px solid transparent;
-  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+  background: linear-gradient(
+    90deg,
+    var(--gradientColor1),
+    var(--gradientColor2)
+  );
   box-shadow: inset 0px 0px 0px 100vw #fff;
   transition: all 0.3s;
-  width: 175px;
+  box-shadow: inset 0px 0px 0px 100vw #fff;
+  // &:hover {
+  //   background: #fff2e8;
+  // } // не работает, надо менять в тексте
+  &:disabled {
+    background: #ffffff;
+    border: 1px solid #cbcfd2;
+    border-radius: 24px;
+  }
+}
+.textButton {
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background: transparent;
+  &:hover {
+    background: #fff2e8;
+  }
+  // &:disabled {
+  //   background: transparent;
+  //   color: #cbcfd2; //не работает не работает, надо менять в тексте
+  // }
+}
+.big {
+  max-width: 191px;
+  width: 100%;
   height: 44px;
 }
-.filledBtn {
-  font-family: 'Manrope-Medium';
-  padding: 13px 65px;
-  border-radius: 24px;
-  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  transition: --gradientColor1 0.5s, --gradientColor2 0.5s;
+.medium {
+  max-width: 120px;
+  width: 100%;
+  height: 44px;
 }
-.filledBtn:hover,
-.outlinedBtn:hover {
-  --gradientColor1: #f98712;
-  --gradientColor2: #ff4f8d;
+.small {
+  max-width: 96px;
+  height: 44px;
+}
+.buttonText {
+  font-family: "Manrope-Medium";
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
 }
 .gradientText {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+  background: linear-gradient(
+    90deg,
+    var(--gradientColor1),
+    var(--gradientColor2)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.outlinedBtn:hover > .gradientText {
-  --gradientColor1: #f98712;
-  --gradientColor2: #ff4f8d;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+
+// .outlinedBtn {
+//   border-radius: 24px;
+//   border: 1.5px solid transparent;
+//   background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+//   box-shadow: inset 0px 0px 0px 100vw #fff;
+//   transition: all 0.3s;
+//   width: 175px;
+//   height: 44px;
+// }
+// .filledBtn {
+//   font-family: 'Manrope-Medium';
+//   padding: 13px 65px;
+//   border-radius: 24px;
+//   background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 20px;
+//   color: #ffffff;
+//   transition: --gradientColor1 0.5s, --gradientColor2 0.5s;
+// }
+// .filledBtn:hover,
+// .outlinedBtn:hover {
+//   --gradientColor1: #f98712;
+//   --gradientColor2: #ff4f8d;
+// }
+// .gradientText {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 20px;
+//   background: linear-gradient(90deg, var(--gradientColor1), var(--gradientColor2));
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+// }
+// .outlinedBtn:hover > .gradientText {
+//   --gradientColor1: #f98712;
+//   --gradientColor2: #ff4f8d;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+// }
