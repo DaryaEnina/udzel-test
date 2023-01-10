@@ -30,7 +30,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://daryaenina.github.io/udzel-test/index.html",
+  "homepage": "https://daryaenina.github.io/udzel-test/#/",
   "eslintConfig": {
     "extends": [
       "react-app",
