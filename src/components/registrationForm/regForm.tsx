@@ -3,6 +3,7 @@ import { FieldValues, useForm, Controller } from "react-hook-form";
 import "./form.scss";
 import "../button/style.scss";
 import { useStateContext } from "../../context/StateContext";
+import axios from "axios";
 
 const RegForm = () => {
   const [visibility, setVisibility] = useState(false);
@@ -24,7 +25,16 @@ const RegForm = () => {
   });
 
   const onSubmit = (data: FieldValues) => {
+    axios
+      .post(
+        "https://udzel-test-be-production.up.railway.app/api/users/signup",
+        data
+      )
+      .then((res) => console.log(res));
     console.log(data);
+    setTimeout(() => {
+      setActiveRegistration(false);
+    }, 5000);
   };
 
   const handleClick = () => {
@@ -110,9 +120,8 @@ const RegForm = () => {
           )}
           {errors.password?.type === "matchPattern" && (
             <p className="errorMsg">
-              Использование недопустимых знаков.
-              Пароль может содержать только латинские буквы, цифры, специальные
-              символы
+              Использование недопустимых знаков. Пароль может содержать только
+              латинские буквы, цифры, специальные символы
             </p>
           )}
         </div>
@@ -168,7 +177,6 @@ const RegForm = () => {
       </form>
       <div className="bottom-text">
         Уже есть аккаунт?
-
         <button onClick={handleClick}>Войти</button>
       </div>
     </div>
