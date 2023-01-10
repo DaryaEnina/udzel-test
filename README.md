@@ -1,3 +1,3 @@
 # udzel-test
 
-#deploy: https://daryaenina.github.io/udzel-test/index.html
+#deploy: https://daryaenina.github.io/udzel-test
