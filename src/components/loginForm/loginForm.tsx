@@ -22,8 +22,12 @@ const LoginForm = () => {
 
   const onSubmit = (data: FieldValues) => {
     axios
-      .post("http://localhost:5000/api/users/login", data)
+      .post(
+        "https://udzel-test-be-production.up.railway.app/api/users/login",
+        data
+      )
       .then((res) => console.log(res));
+    setActiveLogin(false);
   };
 
   const handleClick = () => {
